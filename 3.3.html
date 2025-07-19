@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employment Application Form</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles to match the provided image */
+        body {
+            background-color: #e9ecef;
+            font-family: 'Arial', sans-serif;
+        }
+        .form-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            background-color: #fff;
+            border: 1px solid #dee2e6;
+            box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+        }
+        .form-header {
+            background-color: #0d6efd; /* A standard blue color */
+            color: white;
+            padding: 0.75rem 1.25rem;
+            text-align: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .main-title {
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        .form-section {
+            margin: 10px;
+            padding: 1.5rem;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .form-section:last-child {
+            border-bottom: none;
+        }
+        .form-label {
+            font-weight: 500;
+            font-size: 0.875rem;
+            margin-bottom: 0.25rem;
+        }
+        .form-control, .form-check-input {
+            border-radius: 0;
+        }
+        .table-bordered {
+            border: 1px solid #dee2e6;
+        }
+        .table-bordered th,
+        .table-bordered td {
+            border: 1px solid #dee2e6;
+            vertical-align: middle;
+            padding: 0.5rem;
+        }
+        .table th {
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-align: center;
+            background-color: #f8f9fa;
+        }
+        .sub-label {
+            font-size: 0.75rem;
+            color: #6c757d;
+        }
+        .availability-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.5rem 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h1 class="main-title">EMPLOYMENT APPLICATION FORM</h1>
+
+        <div class="form-section form-header">
+            PLEASE PRINT ALL INFORMATION REQUESTED EXCEPT SIGNATURE
+        </div>
+        <div class="form-section form-header" style="background-color: #e9ecef; color: #212529; border-top: 1px solid #dee2e6; border-bottom: 1px solid #dee2e6;height: 30px;">
+            APPLICANTS MAY BE TESTED FOR ILLEGAL DRUGS
+        </div>
+
+        <div class="form-section">
+            <form>
+                <div class="row mb-3">
+                    <div class="col-md-9">
+                        <label for="name" class="form-label">Name:</label>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" id="last-name">
+                                <div class="sub-label">Last</div>
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" id="first-name">
+                                <div class="sub-label">First</div>
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" id="middle-name">
+                                <div class="sub-label">Middle</div>
+                            </div>
+                             <div class="col-sm-3">
+                                <input type="text" class="form-control" id="maiden-name">
+                                <div class="sub-label">Maiden</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="date" class="form-label">Date:</label>
+                        <input type="date" class="form-control" id="date">
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="address" class="form-label">Present Address:</label>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" id="address-number">
+                            <div class="sub-label">Number</div>
+                        </div>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" id="address-street">
+                            <div class="sub-label">Street</div>
+                        </div>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" id="address-city">
+                            <div class="sub-label">City</div>
+                        </div>
+                        <div class="col-sm-1">
+                            <input type="text" class="form-control" id="address-state">
+                            <div class="sub-label">State</div>
+                        </div>
+                        <div class="col-sm-2">
+                            <input type="text" class="form-control" id="address-zip">
+                            <div class="sub-label">Zip</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-3">
+                        <label for="how-long" class="form-label">How Long:</label>
+                        <input type="text" class="form-control" id="how-long">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="ssn" class="form-label">Social Security No.:</label>
+                        <input type="text" class="form-control" id="ssn">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="telephone" class="form-label">Telephone:</label>
+                        <input type="tel" class="form-control" id="telephone">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="under-18" class="form-label">If under 18, please list age:</label>
+                        <input type="number" class="form-control" id="under-18">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="position" class="form-label">Position Applied For:</label>
+                        <input type="text" class="form-control" id="position">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Days/Hours Available to Work:</label>
+                        <div class="availability-grid">
+                            <div>No Pref ______</div>
+                            <div>Thur ______</div>
+                            <div>Mon ______</div>
+                            <div>Fri ______</div>
+                            <div>Tue ______</div>
+                            <div>Sat ______</div>
+                            <div>Wed ______</div>
+                            <div>Sun ______</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-4">
+                        <label for="salary" class="form-label">Salary Desired:</label>
+                        <input type="text" class="form-control" id="salary">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="hours-weekly" class="form-label">How many hours can you work weekly?</label>
+                        <input type="number" class="form-control" id="hours-weekly">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="work-nights" class="form-label">Can you work nights?</label>
+                        <input type="text" class="form-control" id="work-nights">
+                    </div>
+                </div>
+                
+                <div class="row mb-3 align-items-center">
+                    <div class="col-md-6">
+                        <label class="form-label mb-0">Employment Desired:</label>
+                        <div class="d-flex flex-wrap">
+                            <div class="form-check me-3">
+                                <input class="form-check-input" type="checkbox" id="full-time">
+                                <label class="form-check-label" for="full-time">FULL-TIME ONLY</label>
+                            </div>
+                            <div class="form-check me-3">
+                                <input class="form-check-input" type="checkbox" id="part-time">
+                                <label class="form-check-label" for="part-time">PART-TIME ONLY</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="full-or-part-time">
+                                <label class="form-check-label" for="full-or-part-time">FULL- OR PART-TIME</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="availability-date" class="form-label">When available for work?</label>
+                        <input type="date" class="form-control" id="availability-date">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-section">
+            <h5 class="text-center mb-3">EDUCATION & OTHER INFORMATION</h5>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>TYPE OF SCHOOL</th>
+                        <th>NAME OF SCHOOL</th>
+                        <th>LOCATION<br><span class="fw-normal">(Complete mailing address)</span></th>
+                        <th>NO. OF YEARS COMPLETED</th>
+                        <th>MAJOR & DEGREE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>High School</td>
+                        <td><input type="text" class="form-control border-0"></td>
+                        <td><input type="text" class="form-control border-0"></td>
+                        <td><input type="text" class="form-control border-0"></td>
+                        <td><input type="text" class="form-control border-0"></td>
+                    </tr>
+                    <tr>
+                        <td>College</td>
+                        <td><input type="text" class="form-control border-0"></td>
+                        <td><input type="text" class="form-control border-0"></td>
+                        <td><input type="text" class="form-control border-0"></td>
+                        <td><input type="text" class="form-control border-0"></td>
+                    </tr>
+                    <tr>
+                        <td>Bus. or Trade School</td>
+                        <td><input type="text" class="form-control border-0"></td>
+                        <td><input type="text" class="form-control border-0"></td>
+                        <td><input type="text" class="form-control border-0"></td>
+                        <td><input type="text" class="form-control border-0"></td>
+                    </tr>
+                    <tr>
+                        <td>Professional School</td>
+                        <td><input type="text" class="form-control border-0"></td>
+                        <td><input type="text" class="form-control border-0"></td>
+                        <td><input type="text" class="form-control border-0"></td>
+                        <td><input type="text" class="form-control border-0"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="p-4 text-center">
+            <button type="submit" class="btn btn-primary btn-lg">Submit Application</button>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
