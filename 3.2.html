@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marksheet</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles to match the marksheet sample */
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #f8f9fa;
+        }
+        .marksheet-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            border: 1px solid black;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header-logo {
+            max-width: 100px;
+        }
+        .university-title {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: black;
+        }
+        .university-address {
+            font-size: 0.9rem;
+        }
+        .marksheet-title {
+            font-weight: bold;
+            text-align: center;
+            margin: 1.5rem 0;
+            font-size: 1.2rem;
+        }
+        .student-details {
+            font-size: 0.9rem;
+        }
+        .table th, .table td {
+            vertical-align: middle;
+            font-size: 0.9rem;
+            border-color: black;
+        }
+
+        .table thead th {
+            background-color: black;
+            font-weight: bold;
+            color: white;
+            border-color:white ;
+        }
+        .summary-section, .cumulative-section {
+            font-size: 0.9rem;
+            font-weight: bold;
+            background-color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="marksheet-container">
+        <header class="text-center mb-4">
+            <div class="row align-items-center">
+                <div class="col-2">
+                    <img src="msulogo412.png" alt="University Logo" class="header-logo">
+                </div>
+                <div class="col-10">
+                    <h1 class="university-title">THE MAHARAJA SAYAJIRAO UNIVERSITY OF BARODA</h1>
+                    <p class="university-address mb-0">Fatehgunj, Vadodara-390002, Gujarat(India)</p>
+                </div>
+            </div>
+        </header>
+
+        <h2 class="marksheet-title">Second Semester of Bachelor of Engineering-(CRS)-II </h2>
+
+        <div class="student-details mb-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-1"><strong>Name:</strong> Suryavanshi Sarthak Shankar</p>
+                    <p class="mb-1"><strong>PRN:</strong> 8024058419</p>
+                    <p class="mb-1"><strong>Examination:</strong> May-2025</p>
+                    <p class="mb-1"><strong>Faculty:</strong> Faculty of Technology & Engineering</p>
+                </div>
+                <div class="col-md-6">
+                    <p class="mb-1"><strong>Mother Name:</strong> Nalini</p>
+                    <p class="mb-1"><strong>Seat Number:</strong> 486181 (Fresher)</p>
+                    <p class="mb-1"><strong>Specialisation:</strong> Computer Science & Engineering</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table table-bordered text-center">
+                <thead>
+                    <tr>
+                        <th>Course Code</th>
+                        <th>Course Name</th>
+                        <th>Credits</th>
+                        <th>Grade Obtained</th>
+                        <th>Grade Points</th>
+                        <th>Earned Gr. Points</th>
+                        <th>Remark</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>AMT1408CS</td>
+                        <td>Applied Mathematics</td>
+                        <td>4</td>
+                        <td>A+</td>
+                        <td>10.00</td>
+                        <td>10.00</td>
+                        <td>E, C</td>
+                    </tr>
+                    <tr>
+                        <td>CSE1404CS</td>
+                        <td>Database Management System-CSE</td>
+                        <td>4</td>
+                        <td>A+</td>
+                        <td>10.00</td>
+                        <td>10.00</td>
+                        <td>E, C</td>
+                    </tr>
+                    <tr>
+                        <td>CSE1404LCS</td>
+                        <td>Database Management System-CSE</td>
+                        <td>1</td>
+                        <td>A+</td>
+                        <td>10.00</td>
+                        <td>10.00</td>
+                        <td>E, C</td>
+                    </tr>
+                    <tr>
+                        <td>CSE1405CS</td>
+                        <td>Design and Analysis of Algorithms-CSE</td>
+                        <td>4</td>
+                        <td>A+</td>
+                        <td>10.00</td>
+                        <td>10.00</td>
+                        <td>E, C</td>
+                    </tr>
+                    <tr>
+                        <td>CSE1405LCS</td>
+                        <td>Design and Analysis of Algorithms-CSE</td>
+                        <td>1</td>
+                        <td>A+</td>
+                        <td>10.00</td>
+                        <td>10.00</td>
+                        <td>E, C</td>
+                    </tr>
+                    <tr>
+                        <td>CSE1406CS</td>
+                        <td>Digital Logic & Design-CSE</td>
+                        <td>4</td>
+                        <td>A+</td>
+                        <td>10.00</td>
+                        <td>10.00</td>
+                        <td>E, C</td>
+                    </tr>
+                    <tr>
+                        <td>CSE1406LCS</td>
+                        <td>Digital Logic & Design-CSE</td>
+                        <td>1</td>
+                        <td>A+</td>
+                        <td>10.00</td>
+                        <td>10.00</td>
+                        <td>E, C</td>
+                    </tr>
+                     <tr>
+                        <td>ELE1423CS</td>
+                        <td>Analog and Digital Communication</td>
+                        <td>4</td>
+                        <td>A+</td>
+                        <td>10.00</td>
+                        <td>10.00</td>
+                        <td>E, C</td>
+                    </tr>
+                     <tr>
+                        <td>ELE1423LCS</td>
+                        <td>Analog and Digital Communication (L)</td>
+                        <td>1</td>
+                        <td>A+</td>
+                        <td>10.00</td>
+                        <td>10.00</td>
+                        <td>E, C</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="summary-section row mt-3 mb-4">
+            <div class="col-md-4">Earned CREDIT: 24</div>
+            <div class="col-md-4">EGP: 10.00</div>
+            <div class="col-md-4">SGPA: 10.00</div>
+        </div>
+
+        <div class="cumulative-section">
+             <div class="row border-top pt-2 mt-2">
+                <div class="col-md-12 bg-light p-2">
+                    <strong>FINAL CUMULATIVE</strong><br>
+                    Percentage: 100.0 | Total Credits: 99 | Earned Credits: 99 | Total EGP: 10.00 | CGPA: 10.00 | Grade: A+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
